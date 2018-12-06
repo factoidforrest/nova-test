@@ -1,0 +1,42 @@
+{
+  "name": "express-template",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node ./server.js | pino-pretty",
+    "flow": "flow",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "express": "~4.16.0",
+    "express-pino-logger": "^4.0.0",
+    "express-promise-router": "^3.0.3",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pino-pretty": "^2.4.0",
+    "pug": "2.0.0-beta11",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-core": "^7.0.0-bridge",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "flow-bin": "^0.87.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.7",
+    "supertest": "^3.3.0"
+  }
+}
