@@ -1,11 +1,11 @@
 const request = require('supertest');
-const app = require('../../server');
+const app = require('../../app');
 
-describe('Test the root path', () => {
-  test('It should response the GET method', () => request(app)
-    .get('/')
+describe('The Hello World Path', () => {
+  test('Should respond to get with sample data', () => request(app)
+    .get('/hello-world')
     .expect(200)
-    .then((response) => {
-      expect(response.statusCode).toBe(200);
+    .then((res) => {
+      expect(res.body).toEqual({ hello: 'world' });
     }));
 });

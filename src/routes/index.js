@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/hello-world', (req, res) => {
-  res.status(200).send({ an: 'object' });
+  res.status(200).send({ hello: 'world' });
 });
 
 
