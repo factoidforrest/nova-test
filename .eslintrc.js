@@ -5,7 +5,9 @@ module.exports = {
   "plugins": [
     "jest"
   ],
-  "rules": {},
+  "rules": {
+    "class-methods-use-this": "off"
+  },
   "env": {
     "jest/globals": true
   }
