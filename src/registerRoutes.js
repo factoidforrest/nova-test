@@ -1,11 +1,8 @@
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-// const registerSocket = require('./routes/socket');
-const file = require('./routes/file');
+const submitCC = require('./routes/credit-card');
+const bureau = require('./routes/bureau');
 
 module.exports = (app) => {
-  app.use('/', indexRouter);
-  app.use('/users', usersRouter);
-  app.use('/file', file);
+  app.use('/credit-card', submitCC);
+  app.use('/bureau', bureau);
   // registerSocket();
 };
